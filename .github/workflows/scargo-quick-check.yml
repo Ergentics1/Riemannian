@@ -1,0 +1,198 @@
+# Copyright (c) 2026 Ergentics, LLC — Licensed under the MIT License.
+name: SCargo G4 Quick-Check
+
+# Hosted ubuntu-latest G4 changed-module elaboration & leanchecker gate.
+# Strictly enforces ICD-SCARGO-RIEM-001 Zone A immutability, UP-02 axiom hygiene,
+# and scripts/quick-check.py:80 budgets (<= 8 roots, <= 2,000 closure, 0 deletions).
+# Scope is strictly "changed-modules-only" (full_build = false; never attests G5).
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  g4-quick-check:
+    name: G4 Changed-Module Lean v4.36.0 & leanchecker
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LEAN_ABORT_ON_PANIC: "1"
+      LAKE_ARTIFACT_CACHE: "false"
+      MATHLIB_CACHE_GET_URL: https://cache.mathlib.org/mathlib4
+    steps:
+      - name: Checkout candidate head with base history
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Verify Zone A SHA-256 locks, UP-02 hygiene & quick-check.py:80 plan
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || '51d9b1a28026d458aef9c9af3df8b083276e3d2d' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, importlib.util, json, os, pathlib, re, subprocess, sys
+
+          root = pathlib.Path(".").resolve()
+          base_sha = os.environ["BASE_SHA"].strip()
+          head_sha = os.environ["HEAD_SHA"].strip()
+
+          # 1. Exact Zone A SHA-256 locks pinned to baseline 51d9b1a280
+          zone_a_pins = {
+              "lakefile.toml": "e12dd96eb155851de5107571dbfc959e5d9b230ead90331b4778b55b048590bb",
+              "lake-manifest.json": "ee003c5c7a9b2b2a82a142b6633916661c07117199dd143d94d1af63910237df",
+              "comparator.json": "8ea890e6ccda9cf3983ada343af18a41d12542036875a3936e7925ed5b1582ff",
+              "export-targets.txt": "9eeb2e5e55be4a78f6e4983fc950dba915b45ad8aeb7a02a32341927a89e05e8",
+              "lean-toolchain": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a",
+              "src/Main.lean": "fb2d5fe89a9dfcff8ba95fa5703c865254f8564af06d99dec73304f458818432",
+              "src/Challenge.lean": "a3cebbf30be6b9268a0ed413c9bbc256dfa9f4bfa04f1a75f144d135da5e21a5",
+              "src/Statements.lean": "3ab58a3af2384def08e6f71531c33939a83a1408e31ac5b0e75bf4afa488a463",
+          }
+          for rel, expected in zone_a_pins.items():
+              actual = hashlib.sha256((root / rel).read_bytes()).hexdigest()
+              if actual != expected:
+                  print(f"[FAIL] Zone A pin drift on {rel}: expected {expected}, got {actual}", file=sys.stderr)
+                  sys.exit(1)
+          print(f"[PASS] All {len(zone_a_pins)}/{len(zone_a_pins)} Zone A SHA-256 locks verified.")
+
+          # 2. Enforce scripts/quick-check.py:80 rules (<= 8 roots, 0 deletions, <= 2000 closure)
+          changed = subprocess.check_output(
+              ["git", "diff", "--name-only", base_sha, head_sha, "--", "src"],
+              text=True,
+          ).splitlines()
+          changed = [c for c in changed if c.endswith(".lean")]
+          if not (1 <= len(changed) <= 8):
+              print(f"[FAIL] Expected 1..8 changed Lean roots, got {len(changed)}", file=sys.stderr)
+              sys.exit(1)
+          targets = []
+          for rel in changed:
+              p = root / rel
+              if not rel.startswith("src/") or not p.is_file():
+                  print(f"[FAIL] Deleted or unsafe source requires full build (quick-check.py:80): {rel}", file=sys.stderr)
+                  sys.exit(1)
+              targets.append(rel[4:-5].replace("/", "."))
+              # UP-02 forbidden construct scan outside comments
+              raw = p.read_text(encoding="utf-8")
+              no_block = re.sub(r"/-.*?-\/", "", raw, flags=re.S)
+              code = "\n".join(ln.split("--", 1)[0] for ln in no_block.splitlines())
+              for bad in (r"\bsorry\b", r"\badmit\b", r"\bnative_decide\b", r"\bimplemented_by\b", r"\bskipKernelTC\b", r"^\s*axiom\b"):
+                  if re.search(bad, code, re.M):
+                      print(f"[FAIL] UP-02 forbidden construct {bad} detected in {rel}", file=sys.stderr)
+                      sys.exit(1)
+          targets.sort()
+
+          # Use upstream scripts/quick-check.py dependency_closure directly
+          spec = importlib.util.spec_from_file_location("rh_qc", root / "scripts" / "quick-check.py")
+          qc = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(qc)
+          closure = qc.dependency_closure(root, targets, maximum=2000)
+
+          plan = {
+              "schema": 1,
+              "base_head": base_sha,
+              "candidate_head": head_sha,
+              "targets": targets,
+              "ancestor_modules": len(closure),
+              "closure": closure,
+              "has_deleted_files": False,
+              "zone_a_verified": True,
+          }
+          out_path = pathlib.Path(os.environ["RUNNER_TEMP"]) / "plan.json"
+          out_path.write_text(json.dumps(plan, indent=2) + "\n", encoding="utf-8")
+          print(f"[PASS] Planned {len(targets)} roots, {len(closure)} closure modules (<= 2000), 0 deletions, UP-02 clean.")
+          PY
+
+      - name: Install elan (Lean v4.36.0)
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch Mathlib official prebuilt cache
+        run: lake exe mathlib/cache get
+
+      - name: Elaborate changed targets & run independent leanchecker
+        id: elaborate
+        env:
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess, sys, time
+
+          runner_temp = pathlib.Path(os.environ["RUNNER_TEMP"])
+          plan = json.loads((runner_temp / "plan.json").read_text(encoding="utf-8"))
+          targets = plan["targets"]
+
+          # 1. Real Lean v4.36.0 lake build on all changed root modules
+          build_cmd = ["lake", "build", *[f"+{m}" for m in targets]]
+          print("Running:", " ".join(build_cmd), flush=True)
+          t0 = time.monotonic()
+          bproc = subprocess.run(build_cmd)
+          build_secs = round(time.monotonic() - t0, 2)
+          print(f"[BUILD] exit_code={bproc.returncode} elapsed={build_secs}s", flush=True)
+
+          # 2. Independent leanchecker kernel verification on every built target
+          lc_code = 0
+          lc_t0 = time.monotonic()
+          if bproc.returncode == 0:
+              for mod in targets:
+                  mt0 = time.monotonic()
+                  r = subprocess.run(["lake", "env", "leanchecker", mod])
+                  mel = round(time.monotonic() - mt0, 2)
+                  print(f"[LEANCHECKER] {mod}: exit={r.returncode} ({mel}s)", flush=True)
+                  if r.returncode != 0:
+                      lc_code = r.returncode
+                      break
+          else:
+              lc_code = 1
+          lc_secs = round(time.monotonic() - lc_t0, 2)
+
+          overall_code = 0 if (bproc.returncode == 0 and lc_code == 0) else (bproc.returncode or lc_code)
+          status = "changed_roots_pass" if overall_code == 0 else "changed_roots_fail"
+
+          result = {
+              "schema": 1,
+              "status": status,
+              "scope": "changed-modules-only",
+              "full_build": False,
+              "exit_code": overall_code,
+              "build_exit_code": bproc.returncode,
+              "leanchecker_exit_code": lc_code,
+              "has_deleted_files": False,
+              "base_head": plan["base_head"],
+              "candidate_head": plan["candidate_head"],
+              "targets": targets,
+              "ancestor_modules": plan["ancestor_modules"],
+              "zone_a_verified": plan["zone_a_verified"],
+              "build_seconds": build_secs,
+              "leanchecker_seconds": lc_secs,
+              "runner_name": "github-ubuntu-latest",
+              "remote_workflow_run_id": int(os.environ["GITHUB_RUN_ID"]),
+          }
+          res_path = runner_temp / "quick-check-result.json"
+          res_path.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps(result, indent=2), flush=True)
+
+          summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary_path:
+              with open(summary_path, "a", encoding="utf-8") as sf:
+                  sf.write("### SCargo G4 Changed-Module Diagnostic (full_build = false)\n\n")
+                  sf.write("```json\n" + json.dumps(result, indent=2) + "\n```\n")
+
+          sys.exit(overall_code)
+          PY
+
+      - name: Upload genuine remote G4 quick-check receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: scargo-quick-check-result
+          path: ${{ runner.temp }}/quick-check-result.json
+          if-no-files-found: error
+          retention-days: 30
