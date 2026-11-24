@@ -10,37 +10,20 @@ theorem UpperTheory.Reformulated.B.Qi13.aux1 :
         @ValuativeRel K (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst)))]
       [inst_2 : TopologicalSpace K] [@IsNonarchimedeanLocalField K inst inst_1 inst_2],
       @IsLocalRing
-        (↥(@Valuation.integer K
-            (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-              inst_1)
-            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-        (@CommSemiring.toSemiring
-          (↥(@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@CommRing.toCommSemiring
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))))) := by
+        (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+        (@CommSemiring.toSemiring (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@CommRing.toCommSemiring (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  inst_1))))) := by
   intro K _ _ _ _
   infer_instance
 
@@ -55,539 +38,215 @@ theorem UpperTheory.Reformulated.B.Qi13.aux1 :
               (l : Nat) →
                 [inst_4 : Fact (Nat.Prime l)] →
                   [@CharP
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@IsDiscreteValuationRing.toIsLocalRing
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@instIsDomain K (@Field.toSemifield K inst))
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                              K inst inst_1 inst_2 inst_3)))
-                        (@AddGroupWithOne.toAddMonoidWithOne
-                          (@IsLocalRing.ResidueField
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsDiscreteValuationRing.toIsLocalRing
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@instIsDomain K (@Field.toSemifield K inst))
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                K inst inst_1 inst_2 inst_3)))
-                          (@Ring.toAddGroupWithOne
-                            (@IsLocalRing.ResidueField
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsDiscreteValuationRing.toIsLocalRing
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@instIsDomain K (@Field.toSemifield K inst))
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                  K inst inst_1 inst_2 inst_3)))
-                            (@DivisionRing.toRing
-                              (@IsLocalRing.ResidueField
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsDiscreteValuationRing.toIsLocalRing
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@instIsDomain K (@Field.toSemifield K inst))
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                    K inst inst_1 inst_2 inst_3)))
-                              (@Field.toDivisionRing
-                                (@IsLocalRing.ResidueField
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsDiscreteValuationRing.toIsLocalRing
-                                    (↥(@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                      (@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@Subring.instIsDomainSubtypeMem K
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@instIsDomain K (@Field.toSemifield K inst))
-                                      (@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                      K inst inst_1 inst_2 inst_3)))
-                                (@IsLocalRing.ResidueField.field
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsDiscreteValuationRing.toIsLocalRing
-                                    (↥(@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                      (@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@Subring.instIsDomainSubtypeMem K
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@instIsDomain K (@Field.toSemifield K inst))
-                                      (@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                      K inst inst_1 inst_2 inst_3)))))))
+                        (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+                        (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@DivisionRing.toRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))))))
                         l] →
                     @Algebra (ZMod l)
-                      (@IsLocalRing.ResidueField
-                        (↥(@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@Subring.toCommRing K (@Field.toCommRing K inst)
-                          (@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@IsDiscreteValuationRing.toIsLocalRing
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@instIsDomain K (@Field.toSemifield K inst))
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                            K inst inst_1 inst_2 inst_3)))
+                      (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
                       (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4)))
-                      (@DivisionSemiring.toSemiring
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@IsDiscreteValuationRing.toIsLocalRing
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@instIsDomain K (@Field.toSemifield K inst))
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                              K inst inst_1 inst_2 inst_3)))
-                        (@Semifield.toDivisionSemiring
-                          (@IsLocalRing.ResidueField
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsDiscreteValuationRing.toIsLocalRing
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@instIsDomain K (@Field.toSemifield K inst))
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                K inst inst_1 inst_2 inst_3)))
-                          (@Field.toSemifield
-                            (@IsLocalRing.ResidueField
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsDiscreteValuationRing.toIsLocalRing
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@instIsDomain K (@Field.toSemifield K inst))
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                  K inst inst_1 inst_2 inst_3)))
-                            (@IsLocalRing.ResidueField.field
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsDiscreteValuationRing.toIsLocalRing
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@instIsDomain K (@Field.toSemifield K inst))
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                  K inst inst_1 inst_2 inst_3)))))) :=
+                      (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing
+  K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3))) (@Field.toSemifield
+  (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))))) :=
     fun (K : Type) [inst : Field K]
         [inst_1 :
           @ValuativeRel K (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst)))]
@@ -595,184 +254,83 @@ theorem UpperTheory.Reformulated.B.Qi13.aux1 :
         [Fact (Nat.Prime l)]
         [inst_5 :
           @CharP
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@AddGroupWithOne.toAddMonoidWithOne
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Ring.toAddGroupWithOne
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@DivisionRing.toRing
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@Field.toDivisionRing
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@IsLocalRing.ResidueField.field
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+            (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+            (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionRing.toRing (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
             l] ↦
       @ZMod.algebra
-        (@IsLocalRing.ResidueField
-          (↥(@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@Subring.toCommRing K (@Field.toCommRing K inst)
-            (@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-        (@DivisionRing.toRing
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@Field.toDivisionRing
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@IsLocalRing.ResidueField.field
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))
+        (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+        (@DivisionRing.toRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))
         l inst_5
 
 @[reducible] noncomputable def UpperTheory.Reformulated.B.Qi13.fdim : (K : Type) →
@@ -787,313 +345,137 @@ theorem UpperTheory.Reformulated.B.Qi13.aux1 :
         [inst_4 : Fact (Nat.Prime l)]
         [inst_5 :
           @CharP
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@AddGroupWithOne.toAddMonoidWithOne
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Ring.toAddGroupWithOne
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@DivisionRing.toRing
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@Field.toDivisionRing
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@IsLocalRing.ResidueField.field
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+            (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+            (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionRing.toRing (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
             l] ↦
       @Module.finrank (ZMod l)
-        (@IsLocalRing.ResidueField
-          (↥(@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@Subring.toCommRing K (@Field.toCommRing K inst)
-            (@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-        (@DivisionSemiring.toSemiring (ZMod l)
-          (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
-        (@Semiring.toAddCommMonoid
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@DivisionSemiring.toSemiring
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Semifield.toDivisionSemiring
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Field.toSemifield
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@IsLocalRing.ResidueField.field
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
-        (@Algebra.toModule (ZMod l)
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4)))
-          (@DivisionSemiring.toSemiring
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Semifield.toDivisionSemiring
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Field.toSemifield
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@IsLocalRing.ResidueField.field
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))
-          (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2 inst_3 l inst_4 inst_5))
+        (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+        (@DivisionSemiring.toSemiring (ZMod l) (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
+        (@Semiring.toAddCommMonoid (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+        (@Algebra.toModule (ZMod l) (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l
+  inst_4))) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer
+  K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))) (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2
+  inst_3 l inst_4 inst_5))
 
 theorem UpperTheory.Reformulated.B.Qi13.aux4 :
     ∀ (K : Type) [inst : Field K]
@@ -1103,312 +485,137 @@ theorem UpperTheory.Reformulated.B.Qi13.aux4 :
       [inst_4 : Fact (Nat.Prime l)]
       [inst_5 :
         @CharP
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@AddGroupWithOne.toAddMonoidWithOne
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Ring.toAddGroupWithOne
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@DivisionRing.toRing
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@Field.toDivisionRing
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@IsLocalRing.ResidueField.field
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+          (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+          (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionRing.toRing (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
           l],
       @Module.Free (ZMod l)
-        (@IsLocalRing.ResidueField
-          (↥(@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@Subring.toCommRing K (@Field.toCommRing K inst)
-            (@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
+        (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
         (@CommSemiring.toSemiring (ZMod l) (@CommRing.toCommSemiring (ZMod l) (ZMod.commRing l)))
-        (@AddCommGroup.toAddCommMonoid
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@Ring.toAddCommGroup
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@DivisionRing.toRing
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Field.toDivisionRing
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@IsLocalRing.ResidueField.field
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
-        (@Algebra.toModule (ZMod l)
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4)))
-          (@DivisionSemiring.toSemiring
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Semifield.toDivisionSemiring
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Field.toSemifield
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@IsLocalRing.ResidueField.field
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))
-          (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) := by
+        (@AddCommGroup.toAddCommMonoid (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Ring.toAddCommGroup (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionRing.toRing (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+        (@Algebra.toModule (ZMod l) (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l
+  inst_4))) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer
+  K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))) (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2
+  inst_3 l inst_4 inst_5)) := by
   intro K _ _ _ _ l _ _
   letI := UpperTheory.Reformulated.B.Qi13.algRes K l
   exact Module.Free.of_divisionRing (ZMod l) _
@@ -1428,313 +635,137 @@ theorem UpperTheory.Reformulated.B.Qi13.aux6 :
       [inst_4 : Fact (Nat.Prime l)]
       [inst_5 :
         @CharP
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@AddGroupWithOne.toAddMonoidWithOne
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Ring.toAddGroupWithOne
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@DivisionRing.toRing
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@Field.toDivisionRing
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@IsLocalRing.ResidueField.field
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+          (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+          (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionRing.toRing (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
           l],
       @Module.Finite (ZMod l)
-        (@IsLocalRing.ResidueField
-          (↥(@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@Subring.toCommRing K (@Field.toCommRing K inst)
-            (@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-        (@DivisionSemiring.toSemiring (ZMod l)
-          (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
-        (@Semiring.toAddCommMonoid
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@DivisionSemiring.toSemiring
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Semifield.toDivisionSemiring
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Field.toSemifield
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@IsLocalRing.ResidueField.field
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
-        (@Algebra.toModule (ZMod l)
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4)))
-          (@DivisionSemiring.toSemiring
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Semifield.toDivisionSemiring
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Field.toSemifield
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@IsLocalRing.ResidueField.field
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))
-          (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) := by
+        (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+        (@DivisionSemiring.toSemiring (ZMod l) (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
+        (@Semiring.toAddCommMonoid (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+        (@Algebra.toModule (ZMod l) (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l
+  inst_4))) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer
+  K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))) (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2
+  inst_3 l inst_4 inst_5)) := by
   intro K _ _ _ _ l _ _
   letI := UpperTheory.Reformulated.B.Qi13.algRes K l
   haveI : Finite (IsLocalRing.ResidueField (ValuativeRel.valuation K).integer) := inferInstance
@@ -1752,828 +783,329 @@ noncomputable def UpperTheory.Reformulated.B.Qi13.bb :
                 [inst_4 : Fact (Nat.Prime l)] →
                   [inst_5 :
                       @CharP
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@IsDiscreteValuationRing.toIsLocalRing
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@instIsDomain K (@Field.toSemifield K inst))
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                              K inst inst_1 inst_2 inst_3)))
-                        (@AddGroupWithOne.toAddMonoidWithOne
-                          (@IsLocalRing.ResidueField
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsDiscreteValuationRing.toIsLocalRing
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@instIsDomain K (@Field.toSemifield K inst))
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                K inst inst_1 inst_2 inst_3)))
-                          (@Ring.toAddGroupWithOne
-                            (@IsLocalRing.ResidueField
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsDiscreteValuationRing.toIsLocalRing
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@instIsDomain K (@Field.toSemifield K inst))
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                  K inst inst_1 inst_2 inst_3)))
-                            (@DivisionRing.toRing
-                              (@IsLocalRing.ResidueField
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsDiscreteValuationRing.toIsLocalRing
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@instIsDomain K (@Field.toSemifield K inst))
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                    K inst inst_1 inst_2 inst_3)))
-                              (@Field.toDivisionRing
-                                (@IsLocalRing.ResidueField
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsDiscreteValuationRing.toIsLocalRing
-                                    (↥(@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                      (@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@Subring.instIsDomainSubtypeMem K
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@instIsDomain K (@Field.toSemifield K inst))
-                                      (@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                      K inst inst_1 inst_2 inst_3)))
-                                (@IsLocalRing.ResidueField.field
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsDiscreteValuationRing.toIsLocalRing
-                                    (↥(@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                      (@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@Subring.instIsDomainSubtypeMem K
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@instIsDomain K (@Field.toSemifield K inst))
-                                      (@Valuation.integer K
-                                        (@ValuativeRel.ValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-                                          inst_1)
-                                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                          inst_1)))
-                                    (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                      K inst inst_1 inst_2 inst_3)))))))
+                        (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+                        (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@DivisionRing.toRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))))))
                         l] →
                     @Module.Basis (Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) (ZMod l)
-                      (@IsLocalRing.ResidueField
-                        (↥(@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@Subring.toCommRing K (@Field.toCommRing K inst)
-                          (@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@IsDiscreteValuationRing.toIsLocalRing
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@instIsDomain K (@Field.toSemifield K inst))
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                            K inst inst_1 inst_2 inst_3)))
-                      (@DivisionSemiring.toSemiring (ZMod l)
-                        (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
-                      (@Semiring.toAddCommMonoid
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@IsDiscreteValuationRing.toIsLocalRing
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@instIsDomain K (@Field.toSemifield K inst))
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                              K inst inst_1 inst_2 inst_3)))
-                        (@DivisionSemiring.toSemiring
-                          (@IsLocalRing.ResidueField
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsDiscreteValuationRing.toIsLocalRing
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@instIsDomain K (@Field.toSemifield K inst))
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                K inst inst_1 inst_2 inst_3)))
-                          (@Semifield.toDivisionSemiring
-                            (@IsLocalRing.ResidueField
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsDiscreteValuationRing.toIsLocalRing
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@instIsDomain K (@Field.toSemifield K inst))
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                  K inst inst_1 inst_2 inst_3)))
-                            (@Field.toSemifield
-                              (@IsLocalRing.ResidueField
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsDiscreteValuationRing.toIsLocalRing
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@instIsDomain K (@Field.toSemifield K inst))
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                    K inst inst_1 inst_2 inst_3)))
-                              (@IsLocalRing.ResidueField.field
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsDiscreteValuationRing.toIsLocalRing
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@instIsDomain K (@Field.toSemifield K inst))
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                    K inst inst_1 inst_2 inst_3)))))))
-                      (@Algebra.toModule (ZMod l)
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@IsDiscreteValuationRing.toIsLocalRing
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@instIsDomain K (@Field.toSemifield K inst))
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                              K inst inst_1 inst_2 inst_3)))
-                        (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4)))
-                        (@DivisionSemiring.toSemiring
-                          (@IsLocalRing.ResidueField
-                            (↥(@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@Subring.toCommRing K (@Field.toCommRing K inst)
-                              (@Valuation.integer K
-                                (@ValuativeRel.ValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                            (@IsDiscreteValuationRing.toIsLocalRing
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                (@instIsDomain K (@Field.toSemifield K inst))
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                K inst inst_1 inst_2 inst_3)))
-                          (@Semifield.toDivisionSemiring
-                            (@IsLocalRing.ResidueField
-                              (↥(@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                (@Valuation.integer K
-                                  (@ValuativeRel.ValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    inst_1)))
-                              (@IsDiscreteValuationRing.toIsLocalRing
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                  (@instIsDomain K (@Field.toSemifield K inst))
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                  K inst inst_1 inst_2 inst_3)))
-                            (@Field.toSemifield
-                              (@IsLocalRing.ResidueField
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsDiscreteValuationRing.toIsLocalRing
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@instIsDomain K (@Field.toSemifield K inst))
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                    K inst inst_1 inst_2 inst_3)))
-                              (@IsLocalRing.ResidueField.field
-                                (↥(@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                  (@Valuation.integer K
-                                    (@ValuativeRel.ValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      inst_1)))
-                                (@IsDiscreteValuationRing.toIsLocalRing
-                                  (↥(@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                    (@instIsDomain K (@Field.toSemifield K inst))
-                                    (@Valuation.integer K
-                                      (@ValuativeRel.ValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                                        inst_1)))
-                                  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                                    K inst inst_1 inst_2 inst_3))))))
-                        (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) :=
+                      (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+                      (@DivisionSemiring.toSemiring (ZMod l) (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
+                      (@Semiring.toAddCommMonoid (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3))) (@Field.toSemifield
+  (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))))))
+                      (@Algebra.toModule (ZMod l) (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3))) (@Field.toSemifield
+  (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3))))))
+  (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) :=
     fun (K : Type) [inst : Field K]
         [inst_1 :
           @ValuativeRel K (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst)))]
@@ -2581,313 +1113,137 @@ noncomputable def UpperTheory.Reformulated.B.Qi13.bb :
         [inst_4 : Fact (Nat.Prime l)]
         [inst_5 :
           @CharP
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@AddGroupWithOne.toAddMonoidWithOne
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Ring.toAddGroupWithOne
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@DivisionRing.toRing
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@Field.toDivisionRing
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@IsLocalRing.ResidueField.field
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+            (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+            (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionRing.toRing (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
             l] ↦
       @Module.finBasis (ZMod l)
-        (@IsLocalRing.ResidueField
-          (↥(@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@Subring.toCommRing K (@Field.toCommRing K inst)
-            (@Valuation.integer K
-              (@ValuativeRel.ValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-        (@DivisionSemiring.toSemiring (ZMod l)
-          (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
-        (@Semiring.toAddCommMonoid
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@DivisionSemiring.toSemiring
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Semifield.toDivisionSemiring
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Field.toSemifield
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@IsLocalRing.ResidueField.field
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
-        (@Algebra.toModule (ZMod l)
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-          (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4)))
-          (@DivisionSemiring.toSemiring
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@Semifield.toDivisionSemiring
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Field.toSemifield
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@IsLocalRing.ResidueField.field
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))
-          (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2 inst_3 l inst_4 inst_5))
+        (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+        (@DivisionSemiring.toSemiring (ZMod l) (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
+        (@Semiring.toAddCommMonoid (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+        (@Algebra.toModule (ZMod l) (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l
+  inst_4))) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer
+  K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))) (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2
+  inst_3 l inst_4 inst_5))
         (@UpperTheory.Reformulated.B.Qi13.aux4 K inst inst_1 inst_2 inst_3 l inst_4 inst_5) (@UpperTheory.Reformulated.B.Qi13.aux5 l inst_4)
         (@UpperTheory.Reformulated.B.Qi13.aux6 K inst inst_1 inst_2 inst_3 l inst_4 inst_5)
 
@@ -2914,913 +1270,396 @@ noncomputable def UpperTheory.Reformulated.B.Qi13.blift : (K : Type) →
         [inst_4 : Fact (Nat.Prime l)]
         [inst_5 :
           @CharP
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-            (@AddGroupWithOne.toAddMonoidWithOne
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Ring.toAddGroupWithOne
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@DivisionRing.toRing
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@Field.toDivisionRing
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@IsLocalRing.ResidueField.field
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
+            (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
+            (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionRing.toRing (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
             l]
         (i : Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) ↦
       @Exists.choose
-        (↥(@Valuation.integer K
-            (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
-              inst_1)
-            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+        (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
         (fun
-            (a :
-              ↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) ↦
+            (a : ↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) ↦
           @Eq
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
+            (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
             (@DFunLike.coe
-              (@RingHom
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@Semiring.toNonAssocSemiring
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@CommSemiring.toSemiring
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@CommRing.toCommSemiring
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))))))
-                (@Semiring.toNonAssocSemiring
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@DivisionSemiring.toSemiring
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@Semifield.toDivisionSemiring
-                      (@IsLocalRing.ResidueField
-                        (↥(@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@Subring.toCommRing K (@Field.toCommRing K inst)
-                          (@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                      (@Field.toSemifield
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                        (@IsLocalRing.ResidueField.field
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))))
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+              (@RingHom (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Semiring.toNonAssocSemiring (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@CommSemiring.toSemiring (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@CommRing.toCommSemiring (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))))) (@Semiring.toNonAssocSemiring (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer
+  K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))))
+              (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
               (fun
-                  (x :
-                    ↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) ↦
+                  (x : ↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) ↦
                 @IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+                  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+                  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
                   (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@RingHom.instFunLike
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@Semiring.toNonAssocSemiring
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@CommSemiring.toSemiring
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@CommRing.toCommSemiring
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))))))
-                (@Semiring.toNonAssocSemiring
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@DivisionSemiring.toSemiring
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@Semifield.toDivisionSemiring
-                      (@IsLocalRing.ResidueField
-                        (↥(@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@Subring.toCommRing K (@Field.toCommRing K inst)
-                          (@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                      (@Field.toSemifield
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                        (@IsLocalRing.ResidueField.field
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))))
-              (@IsLocalRing.residue
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
+              (@RingHom.instFunLike (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
+  inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Semiring.toNonAssocSemiring (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@CommSemiring.toSemiring (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@CommRing.toCommSemiring (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))))) (@Semiring.toNonAssocSemiring (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer
+  K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))))
+              (@IsLocalRing.residue (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))
+  inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3))
               a)
             (@DFunLike.coe
-              (@Module.Basis (Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) (ZMod l)
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@DivisionSemiring.toSemiring (ZMod l)
-                  (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
-                (@Semiring.toAddCommMonoid
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@DivisionSemiring.toSemiring
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@Semifield.toDivisionSemiring
-                      (@IsLocalRing.ResidueField
-                        (↥(@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@Subring.toCommRing K (@Field.toCommRing K inst)
-                          (@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                      (@Field.toSemifield
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                        (@IsLocalRing.ResidueField.field
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
-                (@Algebra.toModule (ZMod l)
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4)))
-                  (@DivisionSemiring.toSemiring
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@Semifield.toDivisionSemiring
-                      (@IsLocalRing.ResidueField
-                        (↥(@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@Subring.toCommRing K (@Field.toCommRing K inst)
-                          (@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                      (@Field.toSemifield
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                        (@IsLocalRing.ResidueField.field
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))
-                  (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2 inst_3 l inst_4 inst_5)))
+              (@Module.Basis (Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) (ZMod l) (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@DivisionSemiring.toSemiring (ZMod l) (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
+  (@Semiring.toAddCommMonoid (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing
+  K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))) (@Algebra.toModule (ZMod l) (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))) (@DivisionSemiring.toSemiring
+  (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))) (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2
+  inst_3 l inst_4 inst_5)))
               (Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_5))
               (fun (x : Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) ↦
                 @IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+                  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+                  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
                   (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-              (@Module.Basis.instFunLike (Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) (ZMod l)
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                (@DivisionSemiring.toSemiring (ZMod l)
-                  (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
-                (@Semiring.toAddCommMonoid
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@DivisionSemiring.toSemiring
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@Semifield.toDivisionSemiring
-                      (@IsLocalRing.ResidueField
-                        (↥(@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@Subring.toCommRing K (@Field.toCommRing K inst)
-                          (@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                      (@Field.toSemifield
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                        (@IsLocalRing.ResidueField.field
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))))
-                (@Algebra.toModule (ZMod l)
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                  (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4)))
-                  (@DivisionSemiring.toSemiring
-                    (@IsLocalRing.ResidueField
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                    (@Semifield.toDivisionSemiring
-                      (@IsLocalRing.ResidueField
-                        (↥(@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@Subring.toCommRing K (@Field.toCommRing K inst)
-                          (@Valuation.integer K
-                            (@ValuativeRel.ValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                            (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                              (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                            (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                        (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                      (@Field.toSemifield
-                        (@IsLocalRing.ResidueField
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))
-                        (@IsLocalRing.ResidueField.field
-                          (↥(@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@Subring.toCommRing K (@Field.toCommRing K inst)
-                            (@Valuation.integer K
-                              (@ValuativeRel.ValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                              (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                                (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                              (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                          (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))
-                  (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2 inst_3 l inst_4 inst_5)))
+              (@Module.Basis.instFunLike (Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_5)) (ZMod l) (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@DivisionSemiring.toSemiring (ZMod l) (@Semifield.toDivisionSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))))
+  (@Semiring.toAddCommMonoid (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing
+  K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@DivisionSemiring.toSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)))))) (@Algebra.toModule (ZMod l) (@IsLocalRing.ResidueField
+  (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Semifield.toCommSemiring (ZMod l) (@Field.toSemifield (ZMod l) (@ZMod.instField l inst_4))) (@DivisionSemiring.toSemiring
+  (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2
+  inst_3)) (@Semifield.toDivisionSemiring (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@Field.toSemifield (@IsLocalRing.ResidueField (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3)) (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@UpperTheory.Reformulated.B.Qi13.aux1 K inst inst_1 inst_2 inst_3))))) (@UpperTheory.Reformulated.B.Qi13.algRes K inst inst_1 inst_2
+  inst_3 l inst_4 inst_5)))
               (@UpperTheory.Reformulated.B.Qi13.bb K inst inst_1 inst_2 inst_3 l inst_4 inst_5) i))
         (@UpperTheory.Reformulated.B.Qi13.aux8 K inst inst_1 inst_2 inst_3 l inst_4 inst_5 i)
 
@@ -3900,324 +1739,153 @@ theorem UpperTheory.Reformulated.B.Qi13.linIndep :
           (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst)))]
       [inst_6 :
         @CharP
-          (@IsLocalRing.ResidueField
-            (↥(@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@Subring.toCommRing K (@Field.toCommRing K inst)
-              (@Valuation.integer K
-                (@ValuativeRel.ValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-            (@IsDiscreteValuationRing.toIsLocalRing
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                (@instIsDomain K (@Field.toSemifield K inst))
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K
-                inst inst_1 inst_2 inst_3)))
-          (@AddGroupWithOne.toAddMonoidWithOne
-            (@IsLocalRing.ResidueField
-              (↥(@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@Subring.toCommRing K (@Field.toCommRing K inst)
-                (@Valuation.integer K
-                  (@ValuativeRel.ValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                    (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-              (@IsDiscreteValuationRing.toIsLocalRing
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                  (@instIsDomain K (@Field.toSemifield K inst))
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                  K inst inst_1 inst_2 inst_3)))
-            (@Ring.toAddGroupWithOne
-              (@IsLocalRing.ResidueField
-                (↥(@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@Subring.toCommRing K (@Field.toCommRing K inst)
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                (@IsDiscreteValuationRing.toIsLocalRing
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@instIsDomain K (@Field.toSemifield K inst))
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                    K inst inst_1 inst_2 inst_3)))
-              (@DivisionRing.toRing
-                (@IsLocalRing.ResidueField
-                  (↥(@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@Subring.toCommRing K (@Field.toCommRing K inst)
-                    (@Valuation.integer K
-                      (@ValuativeRel.ValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                        (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                      (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                  (@IsDiscreteValuationRing.toIsLocalRing
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                      (@instIsDomain K (@Field.toSemifield K inst))
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                      K inst inst_1 inst_2 inst_3)))
-                (@Field.toDivisionRing
-                  (@IsLocalRing.ResidueField
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@IsDiscreteValuationRing.toIsLocalRing
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@instIsDomain K (@Field.toSemifield K inst))
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                        K inst inst_1 inst_2 inst_3)))
-                  (@IsLocalRing.ResidueField.field
-                    (↥(@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@Subring.toCommRing K (@Field.toCommRing K inst)
-                      (@Valuation.integer K
-                        (@ValuativeRel.ValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                          (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                        (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                    (@IsDiscreteValuationRing.toIsLocalRing
-                      (↥(@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.toCommRing K (@Field.toCommRing K inst)
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                        (@instIsDomain K (@Field.toSemifield K inst))
-                        (@Valuation.integer K
-                          (@ValuativeRel.ValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                          (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                            (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                          (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
-                      (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation
-                        K inst inst_1 inst_2 inst_3)))))))
+          (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K
+  (@Field.toCommRing K inst) (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K
+  inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
+  (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing
+  K inst)) inst_1))) (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst))
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+          (@AddGroupWithOne.toAddMonoidWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Ring.toAddGroupWithOne (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@DivisionRing.toRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@Field.toDivisionRing (@IsLocalRing.ResidueField (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))
+  (@IsLocalRing.ResidueField.field (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsDiscreteValuationRing.toIsLocalRing (↥(@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
+  (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))) (@Subring.toCommRing K (@Field.toCommRing K inst)
+  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@Subring.instIsDomainSubtypeMem K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@instIsDomain K (@Field.toSemifield K inst)) (@Valuation.integer K
+  (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K
+  (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1)))
+  (@IsNonarchimedeanLocalField.instIsDiscreteValuationRingSubtypeMemSubringIntegerValueGroupWithZeroValuation K inst inst_1 inst_2 inst_3)))))))
           l],
       @Continuous (@Padic l inst_4) K
-          (@UniformSpace.toTopologicalSpace (@Padic l inst_4)
-            (@PseudoMetricSpace.toUniformSpace (@Padic l inst_4)
-              (@SeminormedRing.toPseudoMetricSpace (@Padic l inst_4)
-                (@SeminormedCommRing.toSeminormedRing (@Padic l inst_4)
-                  (@NormedCommRing.toSeminormedCommRing (@Padic l inst_4)
-                    (@NormedField.toNormedCommRing (@Padic l inst_4) (@Padic.normedField l inst_4)))))))
+          (@UniformSpace.toTopologicalSpace (@Padic l inst_4) (@PseudoMetricSpace.toUniformSpace (@Padic l inst_4) (@SeminormedRing.toPseudoMetricSpace (@Padic l inst_4)
+  (@SeminormedCommRing.toSeminormedRing (@Padic l inst_4) (@NormedCommRing.toSeminormedCommRing (@Padic l inst_4) (@NormedField.toNormedCommRing (@Padic l
+  inst_4) (@Padic.normedField l inst_4)))))))
           inst_2
           (@DFunLike.coe
-            (@RingHom (@Padic l inst_4) K
-              (@Semiring.toNonAssocSemiring (@Padic l inst_4)
-                (@CommSemiring.toSemiring (@Padic l inst_4)
-                  (@Semifield.toCommSemiring (@Padic l inst_4)
-                    (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4)))))
-              (@Semiring.toNonAssocSemiring K
-                (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst)))))
+            (@RingHom (@Padic l inst_4) K (@Semiring.toNonAssocSemiring (@Padic l inst_4) (@CommSemiring.toSemiring (@Padic l inst_4) (@Semifield.toCommSemiring (@Padic l
+  inst_4) (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4))))) (@Semiring.toNonAssocSemiring K (@DivisionSemiring.toSemiring K
+  (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst)))))
             (@Padic l inst_4) (fun (x : @Padic l inst_4) ↦ K)
-            (@RingHom.instFunLike (@Padic l inst_4) K
-              (@Semiring.toNonAssocSemiring (@Padic l inst_4)
-                (@CommSemiring.toSemiring (@Padic l inst_4)
-                  (@Semifield.toCommSemiring (@Padic l inst_4)
-                    (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4)))))
-              (@Semiring.toNonAssocSemiring K
-                (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst)))))
-            (@Algebra.algebraMap (@Padic l inst_4) K
-              (@Semifield.toCommSemiring (@Padic l inst_4)
-                (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4)))
-              (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst))) inst_5)) →
+            (@RingHom.instFunLike (@Padic l inst_4) K (@Semiring.toNonAssocSemiring (@Padic l inst_4) (@CommSemiring.toSemiring (@Padic l inst_4) (@Semifield.toCommSemiring
+  (@Padic l inst_4) (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4))))) (@Semiring.toNonAssocSemiring K (@DivisionSemiring.toSemiring K
+  (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst)))))
+            (@Algebra.algebraMap (@Padic l inst_4) K (@Semifield.toCommSemiring (@Padic l inst_4) (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4)))
+  (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst))) inst_5)) →
         @LinearIndependent (Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_6)) (@Padic l inst_4) K
           (fun (i : Fin (@UpperTheory.Reformulated.B.Qi13.fdim K inst inst_1 inst_2 inst_3 l inst_4 inst_6)) ↦
             @Subtype.val K
               (fun (x : K) ↦
                 @Membership.mem K
                   (@Subring K (@Ring.toNonAssocRing K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))))
-                  (@SetLike.instMembership
-                    (@Subring K (@Ring.toNonAssocRing K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))) K
-                    (@Subring.instSetLike K
-                      (@Ring.toNonAssocRing K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))))
-                  (@Valuation.integer K
-                    (@ValuativeRel.ValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@DivisionRing.toRing K (@Field.toDivisionRing K inst))
-                    (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K
-                      (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
-                    (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))
+                  (@SetLike.instMembership (@Subring K (@Ring.toNonAssocRing K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))) K (@Subring.instSetLike K
+  (@Ring.toNonAssocRing K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)))))
+                  (@Valuation.integer K (@ValuativeRel.ValueGroupWithZero K (@Ring.toSemiring K (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1)
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) (@ValuativeRel.instLinearOrderedCommGroupWithZeroValueGroupWithZero K (@Ring.toSemiring K
+  (@DivisionRing.toRing K (@Field.toDivisionRing K inst))) inst_1) (@ValuativeRel.valuation K (@DivisionRing.toRing K (@Field.toDivisionRing K inst)) inst_1))
                   x)
               (@UpperTheory.Reformulated.B.Qi13.blift K inst inst_1 inst_2 inst_3 l inst_4 inst_6 i))
-          (@DivisionSemiring.toSemiring (@Padic l inst_4)
-            (@Semifield.toDivisionSemiring (@Padic l inst_4)
-              (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4))))
-          (@Semiring.toAddCommMonoid K
-            (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst))))
-          (@Algebra.toModule (@Padic l inst_4) K
-            (@Semifield.toCommSemiring (@Padic l inst_4) (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4)))
-            (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst))) inst_5) := by
+          (@DivisionSemiring.toSemiring (@Padic l inst_4) (@Semifield.toDivisionSemiring (@Padic l inst_4) (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l
+  inst_4))))
+          (@Semiring.toAddCommMonoid K (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst))))
+          (@Algebra.toModule (@Padic l inst_4) K (@Semifield.toCommSemiring (@Padic l inst_4) (@Field.toSemifield (@Padic l inst_4) (@instFieldPadic l inst_4)))
+  (@DivisionSemiring.toSemiring K (@Semifield.toDivisionSemiring K (@Field.toSemifield K inst))) inst_5) := by
   intro K _ _ _ _ l _ _ _ hc
   letI := UpperTheory.Reformulated.B.Qi13.algRes K l
   refine UpperTheory.Reformulated.B.Qi13.key (ValuativeRel.valuation K).integer
